@@ -3,6 +3,10 @@
 set -e
 
 JENKINS_DOWNLOAD_URL="http://mirrors.jenkins.io/war-stable/latest/jenkins.war"
+START_JENKINS_COMMAND="java -jar jenkins.war \
+    --httpPort 8000 \
+    --prefix jenkins \
+    --httpListenAddress 127.0.0.1 &"
 
 yum update -y
 yum install -y epel-release
@@ -16,5 +20,5 @@ id -u jenkins || useradd \
 cd /home/jenkins
 [ ! -f jenkins.war ] && su - jenkins  \
     -c "curl -L $JENKINS_DOWNLOAD_URL -o jenkins.war"
-
-su - jenkins -c "java -jar jenkins.war"
+cp /vagrant/jenkins.service /etc/systemd/system/jenkins.service
+su - jenkins -c "$START_JENKINS_COMMAND"
