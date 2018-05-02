@@ -20,3 +20,6 @@ cp /vagrant/jenkins.service /etc/systemd/system/jenkins.service
 cp /vagrant/jenkins.env /home/jenkins/jenkins.env
 systemctl daemon-reload
 systemctl start jenkins.service
+
+cp /vagrant/nginx-jenkins.conf /etc/nginx/conf.d/jenkins.conf
+systemctl start nginx
