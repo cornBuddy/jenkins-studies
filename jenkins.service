@@ -2,11 +2,13 @@
 Description=Jenkins Daemon
 
 [Service]
-ExecStart=/usr/bin/java -jar /home/jenkins/jenkins.war \
-    --httpPort 8000 \
-    --prefix jenkins \
-    --httpListenAddress 127.0.0.1
+EnvironmentFile=/home/jenkins/jenkins.env
+ExecStart=/usr/bin/java \
+    -jar /home/jenkins/jenkins.war \
+    --httpPort=${PORT} \
+    --prefix=${PREFIX}
 User=jenkins
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
