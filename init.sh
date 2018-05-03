@@ -22,4 +22,5 @@ systemctl daemon-reload
 systemctl start jenkins.service
 
 cp /vagrant/nginx-jenkins.conf /etc/nginx/conf.d/jenkins.conf
+setsebool -P httpd_can_network_connect 1
 systemctl start nginx
