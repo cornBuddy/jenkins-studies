@@ -1,0 +1,43 @@
+.
+├── jobs
+│   └── asdfgjk                                                                 # jobs configurations and builds store here
+├── logs
+│   └── tasks                                                                   # pretty obviosly
+├── nodes
+├── secrets
+│   ├── filepath-filters.d
+│   ├── whitelisted-callables.d
+│   ├── hudson.console.ConsoleNote.MAC
+│   ├── hudson.model.Job.serverCookie
+│   ├── hudson.util.Secret
+│   ├── jenkins.model.Jenkins.crumbSalt
+│   ├── jenkins.security.ApiTokenProperty.seed
+│   ├── master.key
+│   ├── org.jenkinsci.main.modules.instance_identity.InstanceIdentity.KEY
+│   └── slave-to-master-security-kill-switch
+├── updates
+│   ├── default.json
+│   ├── hudson.plugins.gradle.GradleInstaller
+│   ├── hudson.tasks.Ant.AntInstaller
+│   ├── hudson.tasks.Maven.MavenInstaller
+│   └── hudson.tools.JDKInstaller
+├── userContent
+│   └── readme.txt
+├── users
+│   └── cornbuddy
+├── workflow-libs
+├── workspace
+│   └── asdfgjk
+├── config.xml
+├── hudson.model.UpdateCenter.xml
+├── hudson.plugins.emailext.ExtendedEmailPublisher.xml
+├── hudson.plugins.git.GitTool.xml
+├── identity.key.enc
+├── jenkins.CLI.xml
+├── jenkins.install.InstallUtil.lastExecVersion
+├── jenkins.install.UpgradeWizard.state
+├── nodeMonitors.xml
+├── queue.xml
+├── queue.xml.bak
+├── secret.key
+└── secret.key.not-so-secret
