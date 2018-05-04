@@ -2,9 +2,9 @@
 ├── jobs
 │   └── asdfgjk                                                                 # jobs configurations and builds store here
 ├── logs
-│   └── tasks                                                                   # pretty obviosly
-├── nodes
-├── secrets
+│   └── tasks                                                                   # obviously obviosly
+├── nodes                                                                       # jenkins slave nodes
+├── secrets                                                                     # the same
 │   ├── filepath-filters.d
 │   ├── whitelisted-callables.d
 │   ├── hudson.console.ConsoleNote.MAC
@@ -15,18 +15,18 @@
 │   ├── master.key
 │   ├── org.jenkinsci.main.modules.instance_identity.InstanceIdentity.KEY
 │   └── slave-to-master-security-kill-switch
-├── updates
+├── updates                                                                     # seems like sort of repo
 │   ├── default.json
 │   ├── hudson.plugins.gradle.GradleInstaller
 │   ├── hudson.tasks.Ant.AntInstaller
 │   ├── hudson.tasks.Maven.MavenInstaller
 │   └── hudson.tools.JDKInstaller
-├── userContent
+├── userContent                                                                 # ftp, available at %jenkins.host%userContent
 │   └── readme.txt
-├── users
+├── users                                                                       # user info
 │   └── cornbuddy
-├── workflow-libs
-├── workspace
+├── workflow-libs                                                               # pipeline libraries
+├── workspace                                                                   # project sources and artefacts
 │   └── asdfgjk
 ├── config.xml
 ├── hudson.model.UpdateCenter.xml
