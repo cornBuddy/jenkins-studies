@@ -5,8 +5,7 @@ Description=Jenkins Daemon
 EnvironmentFile=/home/jenkins/jenkins.env
 ExecStart=/usr/bin/java \
     -jar /home/jenkins/jenkins.war \
-    --httpPort=${PORT} \
-    --prefix=${PREFIX}
+    --httpPort=${PORT}
 User=jenkins
 Restart=always
 
