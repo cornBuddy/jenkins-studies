@@ -28,10 +28,10 @@ services:
             dockerfile: jenkins.Dockerfile
         volumes:
         - jenkins_home:/var/jenkins_home
+        - "./email-config.xml:/var/jenkins_home/hudson.tasks.Mailer.xml"
         networks:
             jenkins-net:
                 ipv4_address: 192.168.1.3
 
 volumes:
     jenkins_home:
-
