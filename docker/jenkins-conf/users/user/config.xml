@@ -1,14 +1,28 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <user>
   <fullName>ivan ivanov</fullName>
+  <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAAwmCWrfRIJBcufk3CDXW+6/4HogxyvraiXC4rrUgm/FdXANEe46kX651pV+mEHc8AosHFJVOY25rmvjqrI8OMBsg==}</apiToken>
+      <apiToken>{AQAAABAAAABwrPVN6y/WNKYj/5kDazWSK8MmjJpbFSrKjZTwa9/6irDUXyfQ+TVXGypEKYHEitAxTKWvJmJgXtAfZo2i/ML/l5/zmaQHccsmSeKCRMlfTZaLzmar/NkA2CJayKLWcv63c5Hot3LOkEJoKDrkwofaLoRky3bWd7in7PUQmSCRuag=}</apiToken>
     </jenkins.security.ApiTokenProperty>
+    <hudson.plugins.greenballs.ColorBlindProperty plugin="greenballs@1.15">
+      <enabledColorBlindSupport>false</enabledColorBlindSupport>
+    </hudson.plugins.greenballs.ColorBlindProperty>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21">
+      <emailAddress>a@b.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
     <hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty plugin="email-ext@2.62">
       <triggers/>
     </hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1525848752494</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
     <hudson.model.MyViewsProperty>
+      <primaryViewName></primaryViewName>
       <views>
         <hudson.model.AllView>
           <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
@@ -25,20 +39,14 @@
     <hudson.model.PaneStatusProperties>
       <collapsed/>
     </hudson.model.PaneStatusProperties>
-    <hudson.search.UserSearchProperty>
-      <insensitiveSearch>true</insensitiveSearch>
-    </hudson.search.UserSearchProperty>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
       <passwordHash>#jbcrypt:$2a$10$JkoLsur7ahspU1LY62lcNOBin0Em8DpsTQVO3eN/ky1IfDk.1cGla</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
-    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21">
-      <emailAddress>a@b.com</emailAddress>
-    </hudson.tasks.Mailer_-UserProperty>
-    <jenkins.security.LastGrantedAuthoritiesProperty>
-      <roles>
-        <string>authenticated</string>
-      </roles>
-      <timestamp>1525848752494</timestamp>
-    </jenkins.security.LastGrantedAuthoritiesProperty>
+    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+      <authorizedKeys></authorizedKeys>
+    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+    <hudson.search.UserSearchProperty>
+      <insensitiveSearch>true</insensitiveSearch>
+    </hudson.search.UserSearchProperty>
   </properties>
 </user>
