@@ -29,6 +29,8 @@ services:
         volumes:
         - jenkins_home:/var/jenkins_home
         - "./jenkins-conf/email-config.xml:/var/jenkins_home/hudson.tasks.Mailer.xml"
+        - "./jenkins-conf/jobs:/var/jenkins_home/jobs"
+        - "./jenkins-conf/users:/var/jenkins_home/users"
         networks:
             jenkins-net:
                 ipv4_address: 192.168.1.3
